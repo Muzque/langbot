@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package langbot.common;
+
+enum Status {
+  UNKNOWN = 0;
+  OK = 1;
+  ERROR = 2;
+  WARNING = 3;
+}
+
+message GenericRequest {}
+
+message GenericResponse {
+  Status status = 1;
+  string message = 2;
+}
+

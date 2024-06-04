@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package langbot.common.micro.api;
+
+import "langbot/common/common.proto";
+
+service AppManager {
+    rpc Hello(langbot.common.GenericRequest) returns (langbot.common.GenericResponse) {}
+}
